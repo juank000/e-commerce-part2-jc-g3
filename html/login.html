@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/base/reset.css">
+    <link rel="stylesheet" href="../assets/css/base/index.css">
+    <link rel="stylesheet" href="../assets/css/base/variables.css">
+
+    <link rel="stylesheet" href="../assets/css/components/validations.css">
+
+    <link rel="stylesheet" href="../assets/css/components/header-section.css">
+    <link rel="stylesheet" href="../assets/css/components/header-main.css">
+    <link rel="stylesheet" href="../assets/css/components/header-logo.css">
+    <link rel="stylesheet" href="../assets/css/components/header-searchbar.css">
+
+    <!-- -->
+    <link rel="stylesheet" href="../assets/css/components/login.css">
+    <link rel="stylesheet" href="../assets/css/components/login-btn.css">
+    <!-- -->
+
+    <link rel="stylesheet" href="../assets/css/components/contact.css">
+    <link rel="stylesheet" href="../assets/css/components/contact-logo.css">
+    <link rel="stylesheet" href="../assets/css/components/contact-list.css">
+    <link rel="stylesheet" href="../assets/css/components/contact-mssg.css">
+    <link rel="stylesheet" href="../assets/css/components/contact-btn.css">
+
+    <!-- Title and Icons -->
+    <title>Log-in JC Store</title>
+    <link rel="icon" type="image/x-icon" href="../assets/imgs/img-icons/favicon-shop-2.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+</head>
+<body>
+    <!-- Header Section -->
+    <section class="header-section">
+        <div class="header-logo">
+            <img class="header-logo--img" src="../assets/imgs/img-icons/logo.png" alt="logo JC store">
+        </div>
+        <header class="header-main">
+            <div class="header-searchbar" id="searchbar">
+                <form class="header-sb--form">
+                    <input class="sb-form--input" placeholder="Buscar..." type="text" value="" name="search" id="search">
+                    <a class="sb-form--submit" type="submit" value="" href="#">
+                        <span class="sb-form--icon material-symbols-outlined">search</span>
+                    </a>
+                </form>
+            </div>
+        </header>
+    </section>
+
+    <main>
+        <!-- Login Section -->
+        <div class="login-div">
+            <form class="form flex flex-column" data-form>
+                <fieldset>
+                    <legend class="login-title">Iniciar Sesión</legend>
+                    <div class="login-input">
+                        <input class="login-input--name input" id="login-name" name="name" type="text" placeholder="Nombre" autocomplete="off" onblur="this.placeholder='Nombre'" required pattern="[\s\S]{4,15}" data-loginName data-type="loginName">
+                        <label class="input-label" for="login-name">Nombre</label>
+                        <span class="input-mssg--error" >Inválido</span>
+                    </div>
+                    <div class="login-input">
+                        <input class="login-input--password input" id="login-password" name="password" type="password" placeholder="Contraseña" autocomplete="off" onblur="this.placeholder='Contraseña'" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" data-loginPassword data-type="loginPassword">
+                        <label class="input-label" for="login-password">Contraseña</label>
+                        <span class="input-mssg--error" >Inválido</span>
+                    </div>
+                </fieldset>
+                <button class="form-btn--login" type="submit">Entrar</button>
+            </form>
+        </div>
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="contact-container--ll">
+                <div class="contact-logo">
+                    <img class="contact-logo--img" src="../assets/imgs/img-icons/logo.png" alt="logo JC store">
+                </div>
+                <div class="contact-list">
+                    <ul>
+                        <li class="contact-link"><a href="#">Quiénes somos?</a></li>
+                        <li class="contact-link"><a href="#">Política de privacidad</a></li>
+                        <li class="contact-link"><a href="#">Programa de fidelidad</a></li>
+                        <li class="contact-link"><a href="#">Nuestras tiendas</a></li>
+                        <li class="contact-link"><a href="#">Anuncie aquí</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact-mssg">
+                <h2 class="contact-title">Hable con nosotros</h2>
+                <div class="input-name--div">
+                    <input class="input-name input" id="input-name" type="text" placeholder="Nombre"
+                    onfocus="this.placeholder=''" onblur="this.placeholder='Nombre'"
+                    data-type="contactName" required pattern="[\s\S]{4,15}">
+                    <span class="input-mssg--error" >Inválido</span>
+                </div>
+                <div class="input-mssg--div">
+                    <textarea class="input-mssg input" id="input-msg" cols="20" rows="5" placeholder="Mensaje"
+                    onfocus="this.placeholder=''" onblur="this.placeholder='Mensaje'"
+                    data-type="contactMssg" required minlength="20" maxlength="500"></textarea>
+                    <span class="input-mssg--error" >Inválido</span>
+                </div>
+                <div>
+                    <button class="btn-send--mssg" id="btn-send--mssg" onclick="reset()">Enviar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h1>built with &#128420 in BTÁ</h1>
+        <h2>by JuanC</h2>
+    </footer>
+
+    <script type="module" src="../assets/js/controllers/login-controller.js"></script>
+    <script src="../assets/js/validations.js"></script>
+</body>
+</html>

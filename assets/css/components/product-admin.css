@@ -1,0 +1,52 @@
+.product-box {
+    position: relative;
+}
+.product-box .product-box--icons {
+    position: absolute;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    padding: .1em;
+}
+.product-box .product-box--icons .material-symbols-outlined{
+    font-size: 1.5em;
+    margin: .1em;
+    border-radius: 5px;
+    background-color: rgb(73, 73, 73);
+}
+
+.product-box .product-box--icons .product-box--delete_icon{
+    color: rgb(250, 172, 158);
+    cursor: progress;
+}
+.product-box .product-box--icons .product-box--edit_icon{
+    color: rgb(165, 248, 203);
+    cursor: pointer;
+}
+
+.product-box .product-box--icons .product-box--delete_icon:hover {
+    color: rgb(255, 71, 71);
+    background-color: #000;
+}
+.product-box .product-box--icons .product-box--edit_icon:hover {
+    color: rgb(133, 248, 25);
+    background-color: #000;
+}
+.product-box .product-box--icons .product-box--delete_icon:active {
+    transform: scale(1.05);
+}
+.product-box .product-box--icons .product-box--edit_icon:active {
+    transform: scale(1.05);
+}
+
+@media(width <= 750px) {
+    .product-box .product-box--icons .material-symbols-outlined{
+        font-size: 1.4em;
+    }
+}
+
+@media(width <= 500px) {
+    .product-box .product-box--icons .material-symbols-outlined{
+        font-size: 1.2em;
+    }
+}

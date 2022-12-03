@@ -1,0 +1,205 @@
+/*.adding-div {
+    display: flex;
+    flex-direction: column;
+}*/
+
+.adding-div {
+    margin-bottom: .5em;
+    padding: 2.5em;
+    font-family: var(--font-raleway);
+    font-size: var(--font-size-deskdev);
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(250, 240, 225);
+}
+
+.form {
+    width: 40vw;
+    height: 90%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 1px 1px 7px rgb(240, 220, 191);
+}
+
+.img--product {
+    width: 200px;
+    margin-bottom: .5em;
+}
+
+.adding-title {
+    font-weight: 600;
+    padding: .5em 0;
+    margin-bottom: .5em;
+}
+
+.container-input {
+    padding-bottom: 1em;
+}
+
+.input {
+    width: 90%;
+    padding: 1.1em;
+    margin-bottom: .5em;
+    border-radius: 10px;
+}
+
+.input-textarea {
+    resize: none;
+}
+
+.input::placeholder {
+    visibility: hidden;
+    color: #00000000;
+}
+
+.input-name::placeholder,
+.input-mssg::placeholder {
+    visibility: visible;
+    color: rgb(107, 107, 107);
+}
+
+.input:focus {
+    outline: none;
+}
+
+.input-label {
+    position: relative;
+    top: -2.2rem;
+    left: .5rem;
+    transition: all .3s;
+}
+
+.input:not(:placeholder-shown) + .input-label,
+.input:focus + .input-label {
+    font-size: calc(var(--font-size-deskdev) - .2em);
+    top: -4rem;
+    transition: all 0.25s;
+    color: rgb(70, 70, 70);
+}
+
+/*.input-container--invalid {
+    margin-bottom: 0.5rem;
+}*/
+
+/*.input-container--invalid .input {
+    border: 1px solid var(--warning-color);
+    border-radius: 7px;
+}*/
+
+/*.input-container--invalid .input-label {
+    color: var(--warning-color);
+}*/
+
+.input-mssg--error {
+    display: none;
+}
+
+/*.input-container--invalid .input-message-error {
+    color: var(--warning-color);
+    display: block;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+}*/
+
+.input-label--textarea {
+    top: -7rem;
+}
+.input:not(:placeholder-shown) + .input-label--textarea,
+.input:focus + .input-label--textarea {
+    top: -8.9rem;
+}
+
+
+@media(width <= 1000px) {
+    .form {
+        width: 50vw;
+    }
+}
+
+@media(width <= 750px) {
+    .adding-div {
+        font-size: var(--font-size-tabdev);
+    }
+
+    .form {
+        width: 60vw;
+    }
+
+    .input {
+        width: 90%;
+        padding: 1em;
+    }
+
+    .input-label {
+        top: -2.1rem;
+    }
+
+    .input:not(:placeholder-shown) + .input-label,
+    .input:focus + .input-label {
+        font-size: calc(var(--font-size-tabdev) - .2em);
+        top: -3.5rem;
+    }
+
+    .input-label--textarea {
+        top: -6.7rem;
+    }
+    .input:not(:placeholder-shown) + .input-label--textarea,
+    .input:focus + .input-label--textarea {
+        top: -8rem;
+    }
+}
+
+@media(width <= 600px) {
+    .adding-div {
+        padding: 6em 3em;
+    }
+    .form {
+        width: 80vw;
+    }
+}
+
+@media(width <= 500px) {
+    .adding-div {
+        font-size: var(--font-size-mobdev);
+    }
+
+    .form {
+        width: 95vw;
+        padding: 2.5em 1.5em;
+    }
+
+    .input {
+        width: 92%;
+        padding: .7em;
+    }
+
+    .input-label {
+        top: -1.9rem;
+    }
+
+    .input:not(:placeholder-shown) + .input-label,
+    .input:focus + .input-label {
+        font-size: calc(var(--font-size-mobdev) - .2em);
+        top: -2.5rem;
+    }
+
+    .input-label--textarea {
+        top: -5rem;
+    }
+    .input:not(:placeholder-shown) + .input-label--textarea,
+    .input:focus + .input-label--textarea {
+        top: -6.1rem;
+    }
+}
+
+@media(width <= 400px) {
+    .adding-div {
+        padding: 5em 2em;
+    }
+    .form {
+        width: 96vw;
+        padding: 2.2em 1.2em;
+    }
+}

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/base/reset.css">
+    <link rel="stylesheet" href="../assets/css/base/index.css">
+    <link rel="stylesheet" href="../assets/css/base/variables.css">
+
+    <link rel="stylesheet" href="../assets/css/components/validations.css">
+
+    <link rel="stylesheet" href="../assets/css/components/header-section.css">
+    <link rel="stylesheet" href="../assets/css/components/header-main.css">
+    <link rel="stylesheet" href="../assets/css/components/header-logo.css">
+    <link rel="stylesheet" href="../assets/css/components/header-searchbar.css">
+
+    <!-- -->
+    <link rel="stylesheet" href="../assets/css/components/product-list.css">
+    <link rel="stylesheet" href="../assets/css/components/product-list-btn.css">
+    <link rel="stylesheet" href="../assets/css/components/product-box.css">
+    <link rel="stylesheet" href="../assets/css/components/product-img.css">
+    <link rel="stylesheet" href="../assets/css/components/product-text.css">
+    <link rel="stylesheet" href="../assets/css/components/product-admin.css">
+    <!-- -->
+
+    <link rel="stylesheet" href="../assets/css/components/contact.css">
+    <link rel="stylesheet" href="../assets/css/components/contact-logo.css">
+    <link rel="stylesheet" href="../assets/css/components/contact-list.css">
+    <link rel="stylesheet" href="../assets/css/components/contact-mssg.css">
+    <link rel="stylesheet" href="../assets/css/components/contact-btn.css">
+
+    <!-- Title and Icons -->
+    <title>Products JC Store</title>
+    <link rel="icon" type="image/x-icon" href="../assets/imgs/img-icons/favicon-shop-2.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+</head>
+<body>
+    <!-- Header Section -->
+    <section class="header-section">
+        <div class="header-logo">
+            <img class="header-logo--img" src="../assets/imgs/img-icons/logo.png" alt="logo JC store">
+        </div>
+        <header class="header-main">
+            <div class="header-searchbar" id="searchbar">
+                <form class="header-sb--form">
+                    <input class="sb-form--input" placeholder="Buscar..." type="text" value="" name="search" id="search">
+                    <a class="sb-form--submit" type="submit" value="" href="#">
+                        <span class="sb-form--icon material-symbols-outlined">search</span>
+                    </a>
+                </form>
+            </div>
+        </header>
+    </section>
+
+    <main>
+        <!-- Products Section -->
+        <section class="product-list">
+            <div class="product-list--title">
+                <h2 class="list--title">Todos los productos</h2>
+                <div class="adding-btn">
+                    <button class="btn-adding" id="btn-adding" onclick="location='product-add.html'">Agregar producto</button>
+                </div>
+            </div>
+            <div class="product-list--container" data-products>
+                <!--<div class="product-box">
+                    <div class="product-box--icons">
+                        <span class="product-box--delete_icon material-symbols-outlined">delete_forever</span>
+                        <span class="product-box--edit_icon material-symbols-outlined">edit</span>
+                    </div>
+                    <ul>
+                        <li class="product-box--img"><img src="https://github.com/juank000/bakery-products/blob/master/bakery_1/Imagen1.png?raw=true" alt="product-1 image"></li>
+                        <li class="product-box--name">Producto 1</li>
+                        <li class="product-box--price">$60.000</li>
+                        <li class="product-box--link product-box--nolink"><a href="#">//**</a></li>
+                    </ul>
+                </div>
+                <div class="product-box">
+                    <div class="product-box--icons">
+                        <span class="product-box--delete_icon material-symbols-outlined">delete_forever</span>
+                        <span class="product-box--edit_icon material-symbols-outlined">edit</span>
+                    </div>
+                    <ul>
+                        <li class="product-box--img"><img src="https://github.com/juank000/bakery-products/blob/master/bakery_1/Imagen2.png?raw=true" alt="product-2 image"></li>
+                        <li class="product-box--name">Producto 2</li>
+                        <li class="product-box--price">$60.000</li>
+                        <li class="product-box--link product-box--nolink"><a href="#">//**</a></li>
+                    </ul>
+                </div>
+                <div class="product-box">
+                    <div class="product-box--icons">
+                        <span class="product-box--delete_icon material-symbols-outlined">delete_forever</span>
+                        <span class="product-box--edit_icon material-symbols-outlined">edit</span>
+                    </div>
+                    <ul>
+                        <li class="product-box--img"><img src="https://github.com/juank000/bakery-products/blob/master/bakery_1/Imagen3.png?raw=true" alt="product-3 image"></li>
+                        <li class="product-box--name">Producto 3</li>
+                        <li class="product-box--price">$60.000</li>
+                        <li class="product-box--link product-box--nolink"><a href="#">//**</a></li>
+                    </ul>
+                </div>
+                <div class="product-box">
+                    <div class="product-box--icons">
+                        <span class="product-box--delete_icon material-symbols-outlined">delete_forever</span>
+                        <span class="product-box--edit_icon material-symbols-outlined">edit</span>
+                    </div>
+                    <ul>
+                        <li class="product-box--img"><img src="https://github.com/juank000/bakery-products/blob/master/bakery_1/Imagen4.png?raw=true" alt="product-4 image"></li>
+                        <li class="product-box--name">Producto 4</li>
+                        <li class="product-box--price">$60.000</li>
+                        <li class="product-box--link product-box--nolink"><a href="#">//**</a></li>
+                    </ul>
+                </div>
+                <div class="product-box">
+                    <div class="product-box--icons">
+                        <span class="product-box--delete_icon material-symbols-outlined">delete_forever</span>
+                        <span class="product-box--edit_icon material-symbols-outlined">edit</span>
+                    </div>
+                    <ul>
+                        <li class="product-box--img"><img src="https://github.com/juank000/bakery-products/blob/master/bakery_1/Imagen5.png?raw=true" alt="product-5 image"></li>
+                        <li class="product-box--name">Producto 5</li>
+                        <li class="product-box--price">$60.000</li>
+                        <li class="product-box--link product-box--nolink"><a href="#">//**</a></li>
+                    </ul>
+                </div>
+                <div class="product-box">
+                    <div class="product-box--icons">
+                        <span class="product-box--delete_icon material-symbols-outlined">delete_forever</span>
+                        <span class="product-box--edit_icon material-symbols-outlined">edit</span>
+                    </div>
+                    <ul>
+                        <li class="product-box--img"><img src="https://github.com/juank000/bakery-products/blob/master/bakery_2/Imagen10.png?raw=true" alt="product-6 image"></li>
+                        <li class="product-box--name">Producto 6</li>
+                        <li class="product-box--price">$60.000</li>
+                        <li class="product-box--link product-box--nolink"><a href="#">//**</a></li>
+                    </ul>
+                </div>
+                <div class="product-box">
+                    <div class="product-box--icons">
+                        <span class="product-box--delete_icon material-symbols-outlined">delete_forever</span>
+                        <span class="product-box--edit_icon material-symbols-outlined">edit</span>
+                    </div>
+                    <ul>
+                        <li class="product-box--img"><img src="https://github.com/juank000/bakery-products/blob/master/bakery_2/Imagen11.png?raw=true" alt="product-7 image"></li>
+                        <li class="product-box--name">Producto 7</li>
+                        <li class="product-box--price">$60.000</li>
+                        <li class="product-box--link product-box--nolink"><a href="#">//**</a></li>
+                    </ul>
+                </div>
+                <div class="product-box">
+                    <div class="product-box--icons">
+                        <span class="product-box--delete_icon material-symbols-outlined">delete_forever</span>
+                        <span class="product-box--edit_icon material-symbols-outlined">edit</span>
+                    </div>
+                    <ul>
+                        <li class="product-box--img"><img src="https://github.com/juank000/bakery-products/blob/master/bakery_2/Imagen12.png?raw=true" alt="product-8 image"></li>
+                        <li class="product-box--name">Producto 8</li>
+                        <li class="product-box--price">$60.000</li>
+                        <li class="product-box--link product-box--nolink"><a href="#">//**</a></li>
+                    </ul>
+                </div>
+                <div class="product-box">
+                    <div class="product-box--icons">
+                        <span class="product-box--delete_icon material-symbols-outlined">delete_forever</span>
+                        <span class="product-box--edit_icon material-symbols-outlined">edit</span>
+                    </div>
+                    <ul>
+                        <li class="product-box--img"><img src="https://github.com/juank000/bakery-products/blob/master/bakery_2/Imagen13.png?raw=true" alt="product-9 image"></li>
+                        <li class="product-box--name">Producto 9</li>
+                        <li class="product-box--price">$60.000</li>
+                        <li class="product-box--link product-box--nolink"><a href="#">//**</a></li>
+                    </ul>
+                </div>
+                <div class="product-box">
+                    <div class="product-box--icons">
+                        <span class="product-box--delete_icon material-symbols-outlined">delete_forever</span>
+                        <span class="product-box--edit_icon material-symbols-outlined">edit</span>
+                    </div>
+                    <ul>
+                        <li class="product-box--img"><img src="https://github.com/juank000/bakery-products/blob/master/bakery_2/Imagen14.png?raw=true" alt="product-10 image"></li>
+                        <li class="product-box--name">Producto 10</li>
+                        <li class="product-box--price">$60.000</li>
+                        <li class="product-box--link product-box--nolink"><a href="#">//**</a></li>
+                    </ul>
+                </div>
+                <div class="product-box">
+                    <div class="product-box--icons">
+                        <span class="product-box--delete_icon material-symbols-outlined">delete_forever</span>
+                        <span class="product-box--edit_icon material-symbols-outlined">edit</span>
+                    </div>
+                    <ul>
+                        <li class="product-box--img"><img src="https://github.com/juank000/bakery-products/blob/master/bakery_3/Imagen16.png?raw=true" alt="product-11 image"></li>
+                        <li class="product-box--name">Producto 11</li>
+                        <li class="product-box--price">$60.000</li>
+                        <li class="product-box--link product-box--nolink"><a href="#">//**</a></li>
+                    </ul>
+                </div>
+                <div class="product-box">
+                    <div class="product-box--icons">
+                        <span class="product-box--delete_icon material-symbols-outlined">delete_forever</span>
+                        <span class="product-box--edit_icon material-symbols-outlined">edit</span>
+                    </div>
+                    <ul>
+                        <li class="product-box--img"><img src="https://github.com/juank000/bakery-products/blob/master/bakery_3/Imagen17.png?raw=true" alt="product-12 image"></li>
+                        <li class="product-box--name">Producto 12</li>
+                        <li class="product-box--price">$60.000</li>
+                        <li class="product-box--link product-box--nolink"><a href="#">//**</a></li>
+                    </ul>
+                </div>
+                <div class="product-box">
+                    <div class="product-box--icons">
+                        <span class="product-box--delete_icon material-symbols-outlined">delete_forever</span>
+                        <span class="product-box--edit_icon material-symbols-outlined">edit</span>
+                    </div>
+                    <ul>
+                        <li class="product-box--img"><img src="https://github.com/juank000/bakery-products/blob/master/bakery_3/Imagen18.png?raw=true" alt="product-13 image"></li>
+                        <li class="product-box--name">Producto 13</li>
+                        <li class="product-box--price">$60.000</li>
+                        <li class="product-box--link product-box--nolink"><a href="#">//**</a></li>
+                    </ul>
+                </div>
+                <div class="product-box">
+                    <div class="product-box--icons">
+                        <span class="product-box--delete_icon material-symbols-outlined">delete_forever</span>
+                        <span class="product-box--edit_icon material-symbols-outlined">edit</span>
+                    </div>
+                    <ul>
+                        <li class="product-box--img"><img src="https://github.com/juank000/bakery-products/blob/master/bakery_3/Imagen19.png?raw=true" alt="product-14 image"></li>
+                        <li class="product-box--name">Producto 14</li>
+                        <li class="product-box--price">$60.000</li>
+                        <li class="product-box--link product-box--nolink"><a href="#">//**</a></li>
+                    </ul>
+                </div>
+                <div class="product-box">
+                    <div class="product-box--icons">
+                        <span class="product-box--delete_icon material-symbols-outlined">delete_forever</span>
+                        <span class="product-box--edit_icon material-symbols-outlined">edit</span>
+                    </div>
+                    <ul>
+                        <li class="product-box--img"><img src="https://github.com/juank000/bakery-products/blob/master/bakery_3/Imagen20.png?raw=true" alt="product-15 image"></li>
+                        <li class="product-box--name">Producto 15</li>
+                        <li class="product-box--price">$60.000</li>
+                        <li class="product-box--link product-box--nolink"><a href="#">//**</a></li>
+                    </ul>
+                </div>
+                <div class="product-box">
+                    <div class="product-box--icons">
+                        <span class="product-box--delete_icon material-symbols-outlined">delete_forever</span>
+                        <span class="product-box--edit_icon material-symbols-outlined">edit</span>
+                    </div>
+                    <ul>
+                        <li class="product-box--img"><img src="https://github.com/juank000/bakery-products/blob/master/bakery_4/Imagen22.png?raw=true" alt="product-16 image"></li>
+                        <li class="product-box--name">Producto 16</li>
+                        <li class="product-box--price">$60.000</li>
+                        <li class="product-box--link product-box--nolink"><a href="#">//**</a></li>
+                    </ul>
+                </div>
+                <div class="product-box">
+                    <div class="product-box--icons">
+                        <span class="product-box--delete_icon material-symbols-outlined">delete_forever</span>
+                        <span class="product-box--edit_icon material-symbols-outlined">edit</span>
+                    </div>
+                    <ul>
+                        <li class="product-box--img"><img src="https://github.com/juank000/bakery-products/blob/master/bakery_4/Imagen23.png?raw=true" alt="product-17 image"></li>
+                        <li class="product-box--name">Producto 17</li>
+                        <li class="product-box--price">$60.000</li>
+                        <li class="product-box--link product-box--nolink"><a href="#">//**</a></li>
+                    </ul>
+                </div>
+                <div class="product-box">
+                    <div class="product-box--icons">
+                        <span class="product-box--delete_icon material-symbols-outlined">delete_forever</span>
+                        <span class="product-box--edit_icon material-symbols-outlined">edit</span>
+                    </div>
+                    <ul>
+                        <li class="product-box--img"><img src="https://github.com/juank000/bakery-products/blob/master/bakery_4/Imagen24.png?raw=true" alt="product-18 image"></li>
+                        <li class="product-box--name">Producto 18</li>
+                        <li class="product-box--price">$60.000</li>
+                        <li class="product-box--link product-box--nolink"><a href="#">//**</a></li>
+                    </ul>
+                </div>
+                <div class="product-box">
+                    <div class="product-box--icons">
+                        <span class="product-box--delete_icon material-symbols-outlined">delete_forever</span>
+                        <span class="product-box--edit_icon material-symbols-outlined">edit</span>
+                    </div>
+                    <ul>
+                        <li class="product-box--img"><img src="https://github.com/juank000/bakery-products/blob/master/bakery_4/Imagen25.png?raw=true" alt="product-19 image"></li>
+                        <li class="product-box--name">Producto 19</li>
+                        <li class="product-box--price">$60.000</li>
+                        <li class="product-box--link product-box--nolink"><a href="#">//**</a></li>
+                    </ul>
+                </div>
+                <div class="product-box">
+                    <div class="product-box--icons">
+                        <span class="product-box--delete_icon material-symbols-outlined">delete_forever</span>
+                        <span class="product-box--edit_icon material-symbols-outlined">edit</span>
+                    </div>
+                    <ul>
+                        <li class="product-box--img"><img src="https://github.com/juank000/bakery-products/blob/master/bakery_4/Imagen26.png?raw=true" alt="product-20 image"></li>
+                        <li class="product-box--name">Producto 20</li>
+                        <li class="product-box--price">$60.000</li>
+                        <li class="product-box--link product-box--nolink"><a href="#">//**</a></li>
+                    </ul>
+                </div>-->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="contact-container--ll">
+                <div class="contact-logo">
+                    <img class="contact-logo--img" src="../assets/imgs/img-icons/logo.png" alt="logo JC store">
+                </div>
+                <div class="contact-list">
+                    <ul>
+                        <li class="contact-link"><a href="#">Quiénes somos?</a></li>
+                        <li class="contact-link"><a href="#">Política de privacidad</a></li>
+                        <li class="contact-link"><a href="#">Programa de fidelidad</a></li>
+                        <li class="contact-link"><a href="#">Nuestras tiendas</a></li>
+                        <li class="contact-link"><a href="#">Anuncie aquí</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact-mssg">
+                <h2 class="contact-title">Hable con nosotros</h2>
+                <div class="input-name--div">
+                    <input class="input-name input" id="input-name" type="text" placeholder="Nombre"
+                    onfocus="this.placeholder=''" onblur="this.placeholder='Nombre'"
+                    data-type="contactName" required pattern="[\s\S]{4,15}">
+                    <span class="input-mssg--error" >Inválido</span>
+                </div>
+                <div class="input-mssg--div">
+                    <textarea class="input-mssg input" id="input-msg" cols="20" rows="5" placeholder="Mensaje"
+                    onfocus="this.placeholder=''" onblur="this.placeholder='Mensaje'"
+                    data-type="contactMssg" required minlength="20" maxlength="500"></textarea>
+                    <span class="input-mssg--error" >Inválido</span>
+                </div>
+                <div>
+                    <button class="btn-send--mssg" id="btn-send--mssg" onclick="reset()">Enviar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h1>built with &#128420 in BTÁ</h1>
+        <h2>by JuanC</h2>
+    </footer>
+
+    <script type="module" src="../assets/js/controllers/product-controller-admin.js"></script>
+    <script src="../assets/js/validations.js"></script>
+</body>
+</html>

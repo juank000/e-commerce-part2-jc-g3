@@ -1,0 +1,19 @@
+.product-box--img {
+    width: 160px;
+}
+
+.product-box--img:hover {
+    box-shadow: 1.5px 1.5px 7px rgb(197, 192, 192);
+}
+
+@media(width <= 750px) {
+    .product-box--img {
+        width: 130px;
+    }
+}
+
+@media(width <= 500px) {
+    .product-box--img {
+        width: 100px;
+    }
+}

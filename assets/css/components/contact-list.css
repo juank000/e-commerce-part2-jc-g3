@@ -1,0 +1,24 @@
+.contact-list {
+    font-family: var(--font-raleway);
+    font-size: var(--font-size-deskdev);
+    /*font-size: calc(var(--font-size-deskdev) + 1rem);*/
+}
+
+.contact-link {
+    padding: 1em;
+}
+
+@media(width <= 750px) {
+    .contact-list {
+        font-size: var(--font-size-tabdev);
+    }
+    .contact-link {
+        padding: .5em;
+    }
+}
+
+@media(width <= 511px) {
+    .contact-list {
+        font-size: var(--font-size-mobdev);
+    }
+}

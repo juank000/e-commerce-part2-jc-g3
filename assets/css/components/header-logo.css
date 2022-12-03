@@ -1,0 +1,22 @@
+.header-logo {
+    width: 16vw;
+    margin-top: .5em;
+}
+
+@media(width <=750px) {
+    .header-logo {
+        width: 20vw;
+    }
+}
+
+@media(width <=500px) {
+    .header-logo {
+        width: 21vw;
+    }
+}
+
+@media(width <=320px) {
+    .header-logo {
+        width: 22vw;
+    }
+}

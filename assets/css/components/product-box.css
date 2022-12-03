@@ -1,0 +1,11 @@
+.product-box {
+    padding: 1em .6em;
+    border-radius: 10px;
+    box-shadow: 1px 1px 7px rgb(197, 192, 192);
+}
+
+@media(width <= 500px) {
+    .product-box {
+        padding: .4em;
+    }
+}

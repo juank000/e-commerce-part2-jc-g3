@@ -1,0 +1,63 @@
+.contact-mssg {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: 85%;
+}
+
+.input-name--div {
+}
+.input-mssg--div {
+}
+
+.contact-title {
+    font-family: var(--font-raleway);
+    font-size: var(--font-size-deskdev);
+    font-weight: 600;
+    padding: .5em 0;
+    margin-bottom: .5em;
+}
+
+.input-name {
+    width: 95%;
+    font-family: var(--font-raleway);
+    font-size: calc(var(--font-size-deskdev) - .1em);
+    padding: .7em;
+    margin-bottom: .5em;
+    border-radius: 10px;
+}
+
+.input-mssg {
+    width: 93%;
+    resize: none;
+    font-family: var(--font-raleway);
+    font-size: calc(var(--font-size-deskdev) - .1em);
+    padding: 1em;
+    margin-top: .5em;
+    border-radius: 10px;
+}
+
+@media(width <= 750px) {
+    .contact-mssg {
+        width: 50vw;
+    }
+    .contact-title {
+        font-size: var(--font-size-tabdev);
+    }
+    .input-name, .input-mssg {
+        font-size: calc(var(--font-size-tabdev) - .1em);
+    }
+}
+
+@media(width <= 500px) {
+    .contact-mssg {
+        width: 75vw;
+        margin-top: 1.5em;
+    }
+    .contact-title {
+        font-size: var(--font-size-mobdev);
+    }
+    .input-name, .input-mssg {
+        font-size: calc(var(--font-size-mobdev) - .1em);
+    }
+}

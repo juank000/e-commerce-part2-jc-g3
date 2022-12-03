@@ -1,0 +1,94 @@
+.banner-div--text {
+    width: 60%;
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-title {
+    font-family: var(--font-raleway);
+    font-size: calc(var(--font-size-deskdev) + 1rem);
+    font-weight: 700;
+    color: #ebe5e5;
+}
+
+.banner-text {
+    font-family: var(--font-raleway);
+    font-size: calc(var(--font-size-deskdev) + .5rem);
+    color: #ebe5e5;
+}
+
+.banner-title--sp {
+    font-size: calc(var(--font-size-deskdev) + 1.5rem);
+    font-weight: 700;
+    font-style: italic;
+    color: rgb(247, 115, 115);
+    -webkit-text-stroke: .5px rgb(66, 66, 66);
+}
+.banner-text .banner-text--sp {
+    font-size: calc(var(--font-size-deskdev) + 1rem);
+    font-weight: 700;
+    font-style: italic;
+    color: rgb(247, 115, 115);
+    -webkit-text-stroke: .5px rgb(66, 66, 66);
+}
+
+@media(width <= 750px) {
+    .banner-div--text {
+        top: 55%;
+    }
+
+    .banner-title {
+        font-size: calc(var(--font-size-tabdev) + .7rem);
+    }
+
+    .banner-text {
+        font-size: calc(var(--font-size-tabdev) + .3rem);
+    }
+
+    .banner-title--sp {
+        font-size: calc(var(--font-size-tabdev) + 1.1rem);
+    }
+    .banner-text .banner-text--sp {
+        font-size: calc(var(--font-size-tabdev) + .6rem);
+    }
+}
+
+@media(width <= 530px) {
+    .banner-title {
+        font-size: calc(var(--font-size-mobdev) + .4rem);
+    }
+
+    .banner-text {
+        font-size: calc(var(--font-size-mobdev) + .2rem);
+    }
+
+    .banner-title--sp {
+        font-size: calc(var(--font-size-mobdev) + .6rem);
+        font-weight: 600;
+    }
+    .banner-text .banner-text--sp {
+        font-size: calc(var(--font-size-mobdev) + .3rem);
+        font-weight: 600;
+    }
+}
+
+@media(width <= 400px) {
+    .banner-title {
+        font-size: var(--font-size-mobdev);
+    }
+
+    .banner-text {
+        font-size: var(--font-size-mobdev);
+    }
+
+    .banner-title--sp {
+        font-size: var(--font-size-mobdev);
+        font-weight: none;
+    }
+    .banner-text .banner-text--sp {
+        font-size: var(--font-size-mobdev);
+        font-weight: none;
+    }
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/base/reset.css">
+    <link rel="stylesheet" href="../assets/css/base/index.css">
+    <link rel="stylesheet" href="../assets/css/base/variables.css">
+
+    <link rel="stylesheet" href="../assets/css/components/validations.css">
+
+    <link rel="stylesheet" href="../assets/css/components/header-section.css">
+    <link rel="stylesheet" href="../assets/css/components/header-main.css">
+    <link rel="stylesheet" href="../assets/css/components/header-logo.css">
+    <link rel="stylesheet" href="../assets/css/components/header-searchbar.css">
+    <link rel="stylesheet" href="../assets/css/components/header-btnAdmin.css">
+
+    <!-- -->
+    <link rel="stylesheet" href="../assets/css/components/productAdd.css">
+    <link rel="stylesheet" href="../assets/css/components/productAdd-btn.css">
+    <!-- -->
+
+    <link rel="stylesheet" href="../assets/css/components/contact.css">
+    <link rel="stylesheet" href="../assets/css/components/contact-logo.css">
+    <link rel="stylesheet" href="../assets/css/components/contact-list.css">
+    <link rel="stylesheet" href="../assets/css/components/contact-mssg.css">
+    <link rel="stylesheet" href="../assets/css/components/contact-btn.css">
+
+    <!-- Title and Icons -->
+    <title>Edit Products JC Store</title>
+    <link rel="icon" type="image/x-icon" href="../assets/imgs/img-icons/favicon-shop-2.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+</head>
+<body>
+    <!-- Header Section -->
+    <section class="header-section">
+        <div class="header-logo">
+            <img class="header-logo--img" src="../assets/imgs/img-icons/logo.png" alt="logo JC store">
+        </div>
+        <header class="header-main">
+            <div class="header-searchbar" id="searchbar">
+                <form class="header-sb--form">
+                    <input class="sb-form--input" placeholder="Buscar..." type="text" value="" name="search" id="search">
+                    <a class="sb-form--submit" type="submit" value="" href="#">
+                        <span class="sb-form--icon material-symbols-outlined">search</span>
+                    </a>
+                </form>
+            </div>
+            <button class="header-btn--admin" id="btn-admin" onclick="location='products.html'">Admin</button>
+        </header>
+    </section>
+
+    <main>
+        <!-- Edit Product Section -->
+        <div class="adding-div">
+            <form class="form flex flex-column" data-form>
+                <img class="img--product" src="" alt="" data-url>
+                <fieldset>
+                    <legend class="adding-title">Editar Producto</legend>
+                    <div class="url-input container-input">
+                        <input class="input" id="url" name="url" type="text" placeholder="URL" required pattern="http(s?)(:\/\/)((www.)?)(([^.]+)\.)?([a-zA-z0-9\-_]+)(.com|.net|.gov|.org|.in)(\/[^\s]*)?" data-imgURL data-type="url">
+                        <label class="input-label" for="url">https://wwwURLdeLaImagen.com/...</label>
+                        <span class="input-mssg--error" >Inválido</span>
+                    </div>
+                    <!--<div class="category-input container-input">
+                        <input class="input" id="category" name="category" type="text" placeholder="Categoría" required pattern="[\s\S]{5,20}" data-category data-type="category">
+                        <label class="input-label" for="category">Categoría</label>
+                        <span class="input-mssg--error" >Inválido</span>
+                    </div>-->
+                    <div class="product-input container-input">
+                        <input class="input" id="product" name="product" type="text" placeholder="Producto" required pattern="[\s\S]{5,20}" data-product data-type="product">
+                        <label class="input-label" for="product">Nombre del producto</label>
+                        <span class="input-mssg--error" >Inválido</span>
+                    </div>
+                    <div class="price-input container-input">
+                        <!-- "(USD|EUR|€|\$)\s?(\d{1,3}(?:[.,]\d{3})*(?:[.,]\d{2}))|(\d{1,3}(?:[.,]\d{3})*(?:[.,]\d{2})?)\s?(USD|EUR|€|\$)" -->
+                        <!-- \d{1,3}(?:[.,]\d{3})*(?:[.,]\d{2})? -->
+                        <!-- <input class="input" id="price" name="price" type="text" placeholder="Precio" required pattern="[0-9]+" data-price data-type="price"> -->
+                        <input class="input" type="text" id="price" name="price" placeholder="Precio" required oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1')" data-price data-type="price"/>
+                        <label class="input-label" for="price">Precio del producto</label>
+                        <span class="input-mssg--error" >Inválido</span>
+                    </div>
+                    <div class="description-input container-input">
+                        <textarea class="input input-textarea" id="description" cols="20" rows="5" name="description" type="text" placeholder="Descripción" required minlength="30" maxlength="300" data-description data-type="description"></textarea>
+                        <label class="input-label input-label--textarea" for="description">Descripción del producto</label>
+                        <span class="input-mssg--error" >Inválido</span>
+                    </div>
+                </fieldset>
+                <button class="form-adding--btn" id="submit-adding--btn" type="submit">Editar</button>
+            </form>
+        </div>
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="contact-container--ll">
+                <div class="contact-logo">
+                    <img class="contact-logo--img" src="../assets/imgs/img-icons/logo.png" alt="logo JC store">
+                </div>
+                <div class="contact-list">
+                    <ul>
+                        <li class="contact-link"><a href="#">Quiénes somos?</a></li>
+                        <li class="contact-link"><a href="#">Política de privacidad</a></li>
+                        <li class="contact-link"><a href="#">Programa de fidelidad</a></li>
+                        <li class="contact-link"><a href="#">Nuestras tiendas</a></li>
+                        <li class="contact-link"><a href="#">Anuncie aquí</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact-mssg">
+                <h2 class="contact-title">Hable con nosotros</h2>
+                <div class="input-name--div">
+                    <input class="input-name input" id="input-name" type="text" placeholder="Nombre"
+                    onfocus="this.placeholder=''" onblur="this.placeholder='Nombre'"
+                    data-type="contactName" required pattern="[\s\S]{4,15}">
+                    <span class="input-mssg--error" >Inválido</span>
+                </div>
+                <div class="input-mssg--div">
+                    <textarea class="input-mssg input" id="input-msg" cols="20" rows="5" placeholder="Mensaje"
+                    onfocus="this.placeholder=''" onblur="this.placeholder='Mensaje'"
+                    data-type="contactMssg" required minlength="20" maxlength="500"></textarea>
+                    <span class="input-mssg--error" >Inválido</span>
+                </div>
+                <div>
+                    <button class="btn-send--mssg" id="btn-send--mssg" onclick="reset()">Enviar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h1>built with &#128420 in BTÁ</h1>
+        <h2>by JuanC</h2>
+    </footer>
+
+    <script type="module" src="../assets/js/controllers/product-controller-edit.js"></script>
+    <script src="../assets/js/validations.js"></script>
+</body>
+</html>

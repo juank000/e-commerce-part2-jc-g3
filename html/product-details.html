@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/base/reset.css">
+    <link rel="stylesheet" href="../assets/css/base/index.css">
+    <link rel="stylesheet" href="../assets/css/base/variables.css">
+
+    <link rel="stylesheet" href="../assets/css/components/validations.css">
+
+    <link rel="stylesheet" href="../assets/css/components/header-section.css">
+    <link rel="stylesheet" href="../assets/css/components/header-main.css">
+    <link rel="stylesheet" href="../assets/css/components/header-logo.css">
+    <link rel="stylesheet" href="../assets/css/components/header-searchbar.css">
+
+    <!-- -->
+    <link rel="stylesheet" href="../assets/css/components/product-list.css">
+    <link rel="stylesheet" href="../assets/css/components/product-box.css">
+    <link rel="stylesheet" href="../assets/css/components/product-img.css">
+    <link rel="stylesheet" href="../assets/css/components/product-text.css">
+
+    <link rel="stylesheet" href="../assets/css/components/product-details.css">
+    <link rel="stylesheet" href="../assets/css/components/product-details-btn.css">
+    <!-- -->
+
+    <link rel="stylesheet" href="../assets/css/components/contact.css">
+    <link rel="stylesheet" href="../assets/css/components/contact-logo.css">
+    <link rel="stylesheet" href="../assets/css/components/contact-list.css">
+    <link rel="stylesheet" href="../assets/css/components/contact-mssg.css">
+    <link rel="stylesheet" href="../assets/css/components/contact-btn.css">
+
+    <!-- Title and Icons -->
+    <title>Detail Products JC Store</title>
+    <link rel="icon" type="image/x-icon" href="../assets/imgs/img-icons/favicon-shop-2.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+</head>
+<body>
+    <!-- Header Section -->
+    <section class="header-section">
+        <div class="header-logo">
+            <img class="header-logo--img" src="../assets/imgs/img-icons/logo.png" alt="logo JC store">
+        </div>
+        <header class="header-main">
+            <div class="header-searchbar" id="searchbar">
+                <form class="header-sb--form">
+                    <input class="sb-form--input" placeholder="Buscar..." type="text" value="" name="search" id="search">
+                    <a class="sb-form--submit" type="submit" value="" href="#">
+                        <span class="sb-form--icon material-symbols-outlined">search</span>
+                    </a>
+                </form>
+            </div>
+            <button class="details-btn" id="btn-details" onclick="location = '../index.html'">Volver</button>
+        </header>
+    </section>
+
+    <main>
+        <!-- Product Details Section -->
+        <section class="details-section" data-product-details>
+            <div class="product-card">
+                <div class="details-img--div">
+                    <img class="product-card--img" src="" alt="product-1 image" data-detailsImg>
+                </div>
+                <div class="product-card--details">
+                    <h1 class="product-card--name" data-detailsProduct></h1>
+                    <h2 class="product-card--price" data-detailsPrice></h2>
+                    <p class="product-card--description" data-detailsDescription></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-list">
+            <div class="product-list--title">
+                <h2 class="list--title">Productos similares</h2>
+                <a class="list-link" href="#">Ver todo <span class="list-icon material-symbols-outlined">double_arrow</span></a>
+            </div>
+            <div class="product-list--container" data-products>
+                <!--<div class="product-box">
+                    <ul>
+                        <li class="product-box--img"><img src="https://github.com/juank000/bakery-products/blob/master/bakery_1/Imagen2.png?raw=true" alt="product-1 image"></li>
+                        <li class="product-box--name">Producto 1</li>
+                        <li class="product-box--price">$60.000</li>
+                        <li class="product-box--link"><a href="#">Ver producto</a></li>
+                    </ul>
+                </div>
+                <div class="product-box">
+                    <ul>
+                        <li class="product-box--img"><img src="https://github.com/juank000/bakery-products/blob/master/bakery_1/Imagen3.png?raw=true" alt="product-1 image"></li>
+                        <li class="product-box--name">Producto 2</li>
+                        <li class="product-box--price">$60.000</li>
+                        <li class="product-box--link"><a href="#">Ver producto</a></li>
+                    </ul>
+                </div>
+                <div class="product-box">
+                    <ul>
+                        <li class="product-box--img"><img src="https://github.com/juank000/bakery-products/blob/master/bakery_1/Imagen4.png?raw=true" alt="product-1 image"></li>
+                        <li class="product-box--name">Producto 3</li>
+                        <li class="product-box--price">$60.000</li>
+                        <li class="product-box--link"><a href="#">Ver producto</a></li>
+                    </ul>
+                </div>
+                <div class="product-box">
+                    <ul>
+                        <li class="product-box--img"><img src="https://github.com/juank000/bakery-products/blob/master/bakery_1/Imagen5.png?raw=true" alt="product-1 image"></li>
+                        <li class="product-box--name">Producto 4</li>
+                        <li class="product-box--price">$60.000</li>
+                        <li class="product-box--link"><a href="#">Ver producto</a></li>
+                    </ul>
+                </div>
+                <div class="product-box">
+                    <ul>
+                        <li class="product-box--img"><img src="https://github.com/juank000/bakery-products/blob/master/bakery_1/Imagen1.png?raw=true" alt="product-1 image"></li>
+                        <li class="product-box--name">Producto 5</li>
+                        <li class="product-box--price">$60.000</li>
+                        <li class="product-box--link"><a href="#">Ver producto</a></li>
+                    </ul>
+                </div>-->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="contact-container--ll">
+                <div class="contact-logo">
+                    <img class="contact-logo--img" src="../assets/imgs/img-icons/logo.png" alt="logo JC store">
+                </div>
+                <div class="contact-list">
+                    <ul>
+                        <li class="contact-link"><a href="#">Quiénes somos?</a></li>
+                        <li class="contact-link"><a href="#">Política de privacidad</a></li>
+                        <li class="contact-link"><a href="#">Programa de fidelidad</a></li>
+                        <li class="contact-link"><a href="#">Nuestras tiendas</a></li>
+                        <li class="contact-link"><a href="#">Anuncie aquí</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact-mssg">
+                <h2 class="contact-title">Hable con nosotros</h2>
+                <div class="input-name--div">
+                    <input class="input-name input" id="input-name" type="text" placeholder="Nombre"
+                    onfocus="this.placeholder=''" onblur="this.placeholder='Nombre'"
+                    data-type="contactName" required pattern="[\s\S]{4,15}">
+                    <span class="input-mssg--error" >Inválido</span>
+                </div>
+                <div class="input-mssg--div">
+                    <textarea class="input-mssg input" id="input-msg" cols="20" rows="5" placeholder="Mensaje"
+                    onfocus="this.placeholder=''" onblur="this.placeholder='Mensaje'"
+                    data-type="contactMssg" required minlength="20" maxlength="500"></textarea>
+                    <span class="input-mssg--error" >Inválido</span>
+                </div>
+                <div>
+                    <button class="btn-send--mssg" id="btn-send--mssg" onclick="reset()">Enviar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h1>built with &#128420 in BTÁ</h1>
+        <h2>by JuanC</h2>
+    </footer>
+
+    <script type="module" src="../assets/js/controllers/product-controller-details.js"></script>
+    <script src="../assets/js/validations.js"></script>
+</body>
+</html>

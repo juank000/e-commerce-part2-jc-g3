@@ -1,0 +1,36 @@
+.product-list--container .product-box ul {
+    font-family: var(--font-raleway);
+    font-size: var(--font-size-deskdev);
+}
+
+.product-box--name {
+    padding: .3em;
+}
+
+.product-box--price {
+    padding: 0 .5em;
+    font-weight: 600;
+
+}
+
+.product-box--link {
+    font-weight: 600;
+    padding: .6em;
+    color: rgb(245, 128, 128);
+}
+
+.product-box--nolink {
+    color: rgb(112, 112, 112);
+}
+
+@media(width <= 750px) {
+    .product-list--container .product-box ul {
+        font-size: var(--font-size-tabdev);
+    }
+}
+
+@media(width <= 500px) {
+    .product-list--container .product-box ul {
+        font-size: var(--font-size-mobdev);
+    }
+}

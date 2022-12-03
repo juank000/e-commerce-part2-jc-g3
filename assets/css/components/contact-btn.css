@@ -1,0 +1,39 @@
+.btn-send--mssg {
+    font-family: var(--font-raleway);
+    font-size: var(--font-size-deskdev);
+    color:#0f0f0f;
+    padding: .5em 2em;
+    margin-top: 1.5em;
+    border-radius: 15px;
+    background-color: #ebe5e5;
+}
+
+.btn-send--mssg:hover {
+    background-color: #eeeaea;
+    color: rgb(70, 70, 70);
+}
+
+.btn-send--mssg:active {
+    font-weight: 600;
+}
+
+@media(width <= 750px){
+    .btn-send--mssg {
+        font-size: var(--font-size-tabdev);
+        padding: .4em 1.5em;
+    }
+}
+
+@media(width <= 500px){
+    .btn-send--mssg {
+        font-size: var(--font-size-mobdev);
+        padding: .3em 1.2em;
+    }
+}
+
+@media(width <= 320px){
+    .btn-send--mssg {
+        font-size: calc(var(--font-size-mobdev) - .095rem);
+        padding: .2em 1.2em;
+    }
+}

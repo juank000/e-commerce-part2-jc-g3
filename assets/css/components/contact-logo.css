@@ -1,0 +1,33 @@
+.contact-logo {
+    width: 16vw;
+    margin-top: .5em;
+    margin-right: 3em;
+}
+
+@media(width <= 900px) {
+    .contact-logo {
+        margin-right: 1.5em;
+    }
+}
+
+@media(width <=750px) {
+    .contact-logo {
+        width: 20vw;
+        margin-bottom: .5em;
+        margin-right: 0;
+    }
+}
+
+@media(width <=500px) {
+    .contact-logo {
+        width: 22vw;
+        margin-left: 29vw;
+        margin-bottom: .5em;
+    }
+}
+
+@media(width <=320px) {
+    .contact-logo {
+        width: 22vw;
+    }
+}

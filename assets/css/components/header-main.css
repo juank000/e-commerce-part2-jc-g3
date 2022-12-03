@@ -1,0 +1,25 @@
+.header-main {
+    display: flex;
+    width: 75vw;
+    justify-content: space-between;
+    margin-top: .5em;
+}
+
+@media(width <= 750px) {
+    .header-main {
+        width: 70vw;
+    }
+}
+
+@media(width <= 500px) {
+    .header-main {
+        width: 67vw;
+        flex-direction: row-reverse;
+    }
+}
+
+@media(width <= 320px) {
+    .header-main {
+        width: 75vw;
+    }
+}

@@ -1,0 +1,38 @@
+.header-btn--admin {
+    font-family: var(--font-raleway);
+    font-size: var(--font-size-deskdev);
+    color:#0f0f0f;
+    padding: 0 2em;
+    border-radius: 15px;
+    background-color: #ebe5e5;
+}
+
+.header-btn--admin:hover {
+    background-color: #eeeaea;
+    color: rgb(70, 70, 70);
+}
+
+.header-btn--admin:active {
+    font-weight: 600;
+}
+
+@media(width <= 750px){
+    .header-btn--admin {
+        font-size: var(--font-size-tabdev);
+        padding: 0 1.5em;
+    }
+}
+
+@media(width <= 550px){
+    .header-btn--admin {
+        font-size: var(--font-size-mobdev);
+        padding: 0 1.2em;
+    }
+}
+
+@media(width <= 320px){
+    .header-btn--admin {
+        font-size: calc(var(--font-size-mobdev) - .095rem);
+        padding: 0 1.2em;
+    }
+}

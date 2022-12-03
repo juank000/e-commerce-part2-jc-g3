@@ -1,0 +1,30 @@
+.contact-section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: .5em;
+    padding: 2.5em;
+    background-color: rgb(250, 240, 225);
+}
+
+.contact-container--ll {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(width <= 750px) {
+    .contact-container--ll {
+        display: block;
+    }
+}
+
+@media(width <= 500px) {
+    .contact-section {
+        flex-wrap: wrap;
+        padding-top: .5em;
+        padding-bottom: 1em;
+    }
+    .contact-container--ll {
+        width: 75vw;
+        text-align: center;
+    }
+}

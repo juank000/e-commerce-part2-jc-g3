@@ -1,0 +1,147 @@
+.login-div {
+    margin-bottom: .5em;
+    padding: 6em;
+    font-family: var(--font-raleway);
+    font-size: var(--font-size-deskdev);
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(250, 240, 225);
+
+}
+
+.form {
+    width: 40vw;
+    height: 90%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 1px 1px 7px rgb(240, 220, 191);
+}
+
+.login-title {
+    font-weight: 600;
+    padding: .5em 0;
+    margin-bottom: .5em;
+}
+
+.login-input {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1em;
+}
+
+.input {
+    width: 90%;
+    padding: 1.1em;
+    margin-bottom: .5em;
+    border-radius: 10px;
+}
+
+.input::placeholder {
+    visibility: hidden;
+    color: #00000000;
+}
+
+.input-name::placeholder,
+.input-mssg::placeholder {
+    visibility: visible;
+    color: rgb(107, 107, 107);
+}
+
+.input:focus {
+    outline: none;
+}
+
+.input-label {
+    position: relative;
+    top: -2.2rem;
+    left: .5rem;
+    transition: all .3s;
+}
+
+.input:not(:placeholder-shown) + .input-label,
+.input:focus + .input-label {
+    font-size: calc(var(--font-size-deskdev) - .2em);
+    top: -4rem;
+    transition: all 0.25s;
+    color: rgb(70, 70, 70);
+}
+
+@media(width <= 1000px) {
+    .form {
+        width: 50vw;
+    }
+}
+
+@media(width <= 750px) {
+    .login-div {
+        font-size: var(--font-size-tabdev);
+    }
+
+    .form {
+        width: 60vw;
+    }
+
+    .input {
+        width: 90%;
+        padding: 1em;
+    }
+
+    .input-label {
+        top: -2.1rem;
+    }
+
+    .input:not(:placeholder-shown) + .input-label,
+    .input:focus + .input-label {
+        font-size: calc(var(--font-size-tabdev) - .2em);
+        top: -3.5rem;
+    }
+
+}
+
+@media(width <= 600px) {
+    .login-div {
+        padding: 6em 3em;
+    }
+    .form {
+        width: 80vw;
+    }
+}
+
+@media(width <= 500px) {
+    .login-div {
+        font-size: var(--font-size-mobdev);
+    }
+
+    .form {
+        width: 95vw;
+        padding: 2.5em 1.5em;
+    }
+
+    .input {
+        width: 92%;
+        padding: .7em;
+    }
+
+    .input-label {
+        top: -1.9rem;
+    }
+
+    .input:not(:placeholder-shown) + .input-label,
+    .input:focus + .input-label {
+        font-size: calc(var(--font-size-mobdev) - .2em);
+        top: -2.5rem;
+    }
+
+}
+
+@media(width <= 400px) {
+    .login-div {
+        padding: 5em 2em;
+    }
+    .form {
+        width: 96vw;
+        padding: 2.2em 1.2em;
+    }
+}
